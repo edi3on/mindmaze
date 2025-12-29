@@ -1,0 +1,33 @@
+Project Context: I am building a web-based psychology puzzle game called "Mind Maze" with a "Mysterious/Noir" aesthetic. The frontend is built with React and expects a specific JSON structure to render quiz questions.
+
+The App Flow:
+
+Standard Mode: Loads static questions from a file.
+
+Tailored Mode: The user inputs a theme (e.g., "Finance") or context. This input is sent to my backend. The backend must use an LLM to generate unique, themed psychology puzzles based on that context.
+
+The Current Task: I have an existing Python script that connects to my LLM. I need you to modify this script so it takes a user's "Context/Theme" string as input and outputs a valid JSON object that strictly matches my frontend's schema.
+
+Requirements for the Script:
+
+Input: Accept a text string (the user's theme).
+
+Prompt Engineering: Update the system prompt sent to the LLM. It must instruct the LLM to act as a "Psychological Profiler" and generate 3-5 riddles/puzzles based on the provided theme.
+
+Output Schema: The LLM must return JSON data that includes:
+
+questionText: The riddle or scenario.
+
+type: Either "multiple_choice" or "hybrid" (boolean + number).
+
+options: (If multiple choice) An array of strings [A, B, C, D].
+
+correctAnswer: The correct option or value.
+
+biasId: The name of the bias being tested (e.g., "Sunk Cost Fallacy").
+
+explanation: A short text explaining why this is a bias.
+
+Integration: Ensure the script parses the LLM's response and saves it as a tailoredQuiz.json file (or returns it as an API response) that my React frontend can consume immediately.
+
+Please look at my current script and propose the necessary changes to implement this generation flow.
