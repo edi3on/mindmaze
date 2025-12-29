@@ -1,5 +1,7 @@
 # Mind Maze 🧠
 
+Link: [mindmaze.example.com](https://v0-mindmazeee.vercel.app/)
+
 **A web-based psychology assessment tool that tests for cognitive biases using puzzles, riddles, and AI-generated scenarios.**
 
 Mind Maze combines the theories of Daniel Kahneman (*Thinking, Fast and Slow*) with a mysterious "Noir" aesthetic to profile a user's susceptibility to biases like Anchoring, Framing, and Sunk Cost Fallacy.
